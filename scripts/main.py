@@ -161,6 +161,7 @@ class LanguageOption:
 # These LanguageOption objects will be used to display the language options to the user and to retrieve the 
 # corresponding language code when the user selects a language.
 language_options = [
+    LanguageOption("Українська", "uk_UA"),
     LanguageOption("عربية", "ar_AR"),
     LanguageOption("Deutsch", "de_DE"),
     LanguageOption("Español", "es_XX"),
@@ -170,7 +171,6 @@ language_options = [
     LanguageOption("日本語", "ja_XX"),
     LanguageOption("한국어", "ko_XX"),
     LanguageOption("Português", "pt_XX"),
-    LanguageOption("Русский", "ru_RU"),
     LanguageOption("中文", "zh_CN"),
     LanguageOption("Afrikaans", "af_ZA"),
     LanguageOption("বাংলা", "bn_BD"),
@@ -369,16 +369,7 @@ class Script(scripts.Script):
         with gr.Row():
             with gr.Column(scale=19):
                 with gr.Accordion("Prompt Translator",open=False):
-                    with gr.Accordion("Help",open=False):
-                        md = gr.Markdown("""
-                        # Description
-                        This script translates your prompt from another language to english before generating the image allowing you to write prompts in your native language.
-                        # How to use
-                        Select Enable translation and wait until you the label shows ready.
-                        Once the label has Ready on it, select the prompt language, write the prompt in the prompt field then press generate. The script will translate the prompt and generate the text.
-                        # Note
-                        First time you enable the script, it may take a long time (around a minute), but once loaded, it will be faster.
-                        """)
+                   
                     with gr.Column():
                         self.enable_translation = gr.Checkbox(label="Enable translation")
                         with gr.Column() as options:
@@ -388,7 +379,7 @@ class Script(scripts.Script):
                             self.language = gr.Dropdown(
                                                 label="Source language", 
                                                 choices=[x.label for x in self.current_axis_options], 
-                                                value="Français", 
+                                                value="choose a language", 
                                                 type="index", 
                                                 elem_id=self.elem_id("x_type")
                                             )
