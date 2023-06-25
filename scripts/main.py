@@ -1,5 +1,5 @@
 # MBartTranslator :
-# Author : ParisNeo
+# Author : ****
 # Description : This script translates Stable diffusion prompt from one of the 50 languages supported by MBART
 #    It uses MBartTranslator class that provides a simple interface for translating text using the MBart language model.
 
