@@ -1,6 +1,5 @@
-# Prompt Translator for Stable Diffusion
-[![Follow me on Twitter](https://img.shields.io/twitter/follow/SpaceNerduino?style=social)](https://twitter.com/SpaceNerduino)
-[![Follow Me on YouTube](https://img.shields.io/badge/Follow%20Me%20on-YouTube-red?style=flat&logo=youtube)](https://www.youtube.com/user/Parisneo)
+# Prompt-Multilang-UA-Portable
+
 
 Stable diffusion is a text to image generation model. The `prompt_translator` extension allows people to translate their prompt from any language to English before executing the generation, making it accessible to a wider audience.
 
