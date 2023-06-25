@@ -368,7 +368,7 @@ class Script(scripts.Script):
 
         with gr.Row():
             with gr.Column(scale=19):
-                with gr.Accordion("Prompt Translator",open=False):
+                with gr.Accordion("Prompt-Multilang-UA-Portable",open=False):
                    
                     with gr.Column():
                         self.enable_translation = gr.Checkbox(label="Enable translation")
